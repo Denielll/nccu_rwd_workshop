@@ -1,0 +1,145 @@
+<!DOCTYPE html>    <!-- 告訴瀏覽器 這是啥類型的檔案-->
+<html>
+	<head>
+		<title>helloo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- jquery必須比bootstrap還要早引入 -->
+		<!-- jquery, source: https://code.jquery.com/ -->
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+		crossorigin="anonymous"></script>
+
+
+
+		<!-- bootstrap, source : http://getbootstrap.com/docs/3.3/getting-started/ -->
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<!-- font awesome CDN -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
+		<style type="text/css">
+			#head1{
+			color:red;
+			background-color: blue;
+		}
+			#head2{
+			color:#ffff00;
+			background-color: blue;
+		}
+			.bg-red{
+				background-color: red;
+		}			
+			.test{
+				background-color:red;
+				height:60px;
+		}
+
+		</style>
+
+	</head>
+	<body>
+		<!-- <div class="container"> -->  <!-- container就是留白 -->
+			<!-- <h1 id = "head1"> hello world</h1> -->
+<!-- 			<div class="row"> -->
+				<!-- .col-xs-12 to create a single column that spans across 12 virtual Bootstrap columns -->
+
+				<!-- offset 可以讓左邊留白 -->
+<!-- 				<div class="col-xs-12 col-md-4  col-md-offset-4" style="margin-bottom: 20px;">  
+					<div class="test"></div>
+				</div>
+
+			</div>
+		</div> -->
+
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+
+
+
+		      <a class="navbar-brand" href="#">
+		      		<i class="fab fa-apple" style="font-size:30px"></i>
+		      </a>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav">
+        			<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        			<li><a href="#">Link</a></li>
+        			<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#">Action</a></li>
+           				<li><a href="#">Another action</a></li>
+           				<li><a href="#">Something else here</a></li>
+           				<li role="separator" class="divider"></li>
+            			<li><a href="#">Separated link</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">One more separated link</a></li>
+          			</ul>
+        			</li>
+      			</ul>
+		  </div>
+		</nav>
+
+		<div class = "container">
+				<div class = "row">
+					<div class="col-sm-4">
+
+						<div class="panel panel-default">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"> This is a panel title </h3>
+							</div>
+							<div class="panel-body">
+								<h3 class="panel-title"> This is a panel body </h3>
+							</div>
+							<div class = "panel-footer">
+								<h3 class="panel-title"> This is a panel body </h3>
+							</div>
+							
+						</div>
+
+
+	</body>
+</html>
+<script type="text/javascript">
+	// window.alert("hahaha")
+	var test = $("#head1").text();
+	console.log(test);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
